@@ -1,0 +1,66 @@
+  // if (col == 1 || col == 6) {
+
+                      /*  if (board.getBoard()[row][col].equals("PawnB"))
+                            g.drawImage(ImageIO.read(blackPawn), xLocation, yLocation, 75, 75, null);
+
+                        else if (board.getBoard()[row][col].equals("PawnW")){
+
+                            g.drawImage(ImageIO.read(whitePawn), row * 100, col * 100, 75, 75, null);
+
+                        }
+                    //}
+                    if (row == 0 & col == 0 || row == 7 & col == 0 || col == 7 & row == 0 || col == 7 && row == 7) {
+                        if (row == 0 & col == 7 || row == 7 && col == 7) {
+                            g.drawImage(ImageIO.read(whiteRook), xLocation, yLocation, 75, 75, null);
+
+                        } else {
+                            g.drawImage(ImageIO.read(blackRook), xLocation, yLocation, 75, 75, null);
+                        }
+                    } else if (row == 1 & col == 0 || row == 6 & col == 0 || row == 6 & col == 7 || row == 1 & col == 7) {
+                        if (row == 1 & col == 0 || row == 6 & col == 0) {
+                            g.drawImage(ImageIO.read(blackBishop), xLocation, yLocation, 100, 100, null);
+                        } else {
+                            g.drawImage(ImageIO.read(whiteBishop), row * 100, col * 100, 75, 75, null);
+
+                        }
+
+                    } else if (row == 2 && col == 0 || row == 5 && col == 0 || row == 2 && col == 7 || row == 5 & col == 7) {
+
+                        if (row == 2 && col == 0 || row == 5 && col == 0) {
+                            g.drawImage(ImageIO.read(blackKnight), xLocation, yLocation, 75, 75, null);
+                        } else {
+                            g.drawImage(ImageIO.read(whiteKnight), row * 100, col * 100, 75, 75, null);
+                        }
+                    } else if (row == 3 && col == 0 || row == 3 && col == 7) {
+                        if (row == 3 && col == 0) {
+                            g.drawImage(ImageIO.read(blackKing), xLocation, yLocation, 75, 75, null);
+                        } else {
+                            g.drawImage(ImageIO.read(whiteKing), xLocation, yLocation, 75, 75, null);
+
+                        }
+                    } else if (row == 4 && col == 0 || row == 4 & col == 7) {
+                        if (row == 4 && col == 0) {
+                            g.drawImage(ImageIO.read(blackQueen), xLocation, yLocation, 75, 75, null);
+
+                        } else {
+                            g.drawImage(ImageIO.read(whiteQueen), xLocation, yLocation, 75, 75, null);
+
+                        }
+                    }
+
+                }
+            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+
+
+
+}//end of class declaration
+*/
