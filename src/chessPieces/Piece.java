@@ -19,7 +19,7 @@ public abstract class Piece {
     public void savePieceLocation(int x, int y)
     {
         saveLoc.put(x,y);
-        System.out.println(x+y);
+        System.out.println("SaveLocation method "+ x + " " + y);
     }
     public abstract boolean isValid(int x , int y);
     //the top two methods can have logic implemented here

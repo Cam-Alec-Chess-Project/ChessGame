@@ -2,9 +2,12 @@ package chessPieces;
 
 public class Pawn extends Piece {
 
+    private Object Pawn;
+
     @Override
     public Piece type(Piece p) {
-        return null;
+        p = (Piece) this.Pawn;
+        return p;
     }
 
     @Override

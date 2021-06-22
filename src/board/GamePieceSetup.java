@@ -1,10 +1,7 @@
 package board;
-import chessPieces.Bishop;
-import chessPieces.Pawn;
-import chessPieces.Piece;
+import chessPieces.*;
 import moves.MouseMovement;
 import moves.MovePiece;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -13,18 +10,15 @@ import java.net.URL;
 
 public class GamePieceSetup extends JPanel{
 
-    // 1. CREATE different JLabels for pieces
-
-
     private final BoardArray board = new BoardArray();
-    MouseMovement mouseMovement = new MouseMovement();
-    MovePiece movePiece = new MovePiece();
-    Pawn pawn= new Pawn() ;
+    Pawn pawn = new Pawn();
     Bishop bishop = new Bishop();
-    Piece piece;
+    Knight knight = new Knight();
+    Queen queen = new Queen();
+    King king = new King();
+    Rook rook = new Rook();
+    ChessHashMap chessHashMap = new ChessHashMap();
 
-    private int x = -1;
-    private int y = -1;
 
     public void setUpGame(Graphics g) throws IOException {
 
@@ -56,65 +50,74 @@ public class GamePieceSetup extends JPanel{
                         assert whitePawn != null;
                         System.out.println(xLocation + yLocation);
                         g.drawImage(ImageIO.read(whitePawn), xLocation, yLocation, 75, 75, null);
-                        // needs to save the image location
-                       pawn.savePieceLocation(xLocation, yLocation);
-                       pawn.updatePieceLocation(xLocation,yLocation);
+                        chessHashMap.Hash(pawn,xLocation,yLocation);
 
                         break;
 
                     case "PawnB":
                         assert blackPawn != null;
                         g.drawImage(ImageIO.read(blackPawn),  xLocation, yLocation,75, 75, null);
+                        chessHashMap.Hash(pawn,xLocation,yLocation);
                         break;
 
                     case "BishopW":
                         assert whiteBishop != null;
                         g.drawImage(ImageIO.read(whiteBishop), xLocation, yLocation, 75, 75, null);
+                        chessHashMap.Hash(bishop, xLocation,yLocation);
                         break;
 
                     case "BishopB":
                         assert blackBishop != null;
                         g.drawImage(ImageIO.read(blackBishop), xLocation, yLocation, 75, 75, null);
+                        chessHashMap.Hash(bishop, xLocation,yLocation);
                         break;
 
                     case "RookW":
                         assert whiteRook != null;
                         g.drawImage(ImageIO.read(whiteRook), xLocation, yLocation, 75, 75, null);
+                        chessHashMap.Hash(rook, xLocation,yLocation);
                         break;
 
                     case "RookB":
                         assert blackRook != null;
                         g.drawImage(ImageIO.read(blackRook), xLocation, yLocation, 75, 75, null);
+                        chessHashMap.Hash(rook, xLocation,yLocation);
                         break;
 
                     case "KnightW":
                         assert whiteKnight != null;
                         g.drawImage(ImageIO.read(whiteKnight), xLocation, yLocation, 75, 75, null);
+                        chessHashMap.Hash(knight, xLocation,yLocation);
                         break;
 
                     case "KnightB":
                         assert blackKnight != null;
                         g.drawImage(ImageIO.read(blackKnight), xLocation, yLocation, 75, 75, null);
+                        chessHashMap.Hash(knight, xLocation,yLocation);
                         break;
 
                     case "KingW":
                         assert whiteKing != null;
                         g.drawImage(ImageIO.read(whiteKing), xLocation, yLocation, 75, 75, null);
+                        chessHashMap.Hash(king, xLocation,yLocation);
                         break;
 
                     case "KingB":
                         assert blackKing != null;
                         g.drawImage(ImageIO.read(blackKing), xLocation, yLocation, 75, 75, null);
+                        chessHashMap.Hash(king, xLocation,yLocation);
                         break;
 
                     case "QueenW":
                         assert whiteQueen != null;
                         g.drawImage(ImageIO.read(whiteQueen), xLocation, yLocation, 75, 75, null);
+                        chessHashMap.Hash(queen, xLocation,yLocation);
                         break;
 
                     case "QueenB":
                         assert blackQueen != null;
                         g.drawImage(ImageIO.read(blackQueen), xLocation, yLocation, 75, 75, null);
+                        chessHashMap.Hash(queen, xLocation,yLocation);
                         break;
 
                     default:

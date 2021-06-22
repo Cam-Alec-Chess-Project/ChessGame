@@ -1,10 +1,15 @@
 package chessPieces;
 
 public class King extends Piece {
+    private Object King;
+
+
 
     @Override
     public Piece type(Piece p) {
-        return null;
+        p = (Piece) this.King;
+        return p;
+
     }
 
     @Override
